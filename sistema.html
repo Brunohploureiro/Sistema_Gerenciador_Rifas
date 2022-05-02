@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Gerenciador de Rifas</title>
+    <title>Sistema para gerenciamento de rifas</title>
+    <link rel="shortcut icon" href="img/rifa.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="img/rifa.png" width="40" height="40" class="d-inline-block align-top navbar-brand" alt="">
-      Gerenciamento de Rifas
-    </a>
-  </nav>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+        <a class="navbar-brand">
+            <img src="img/rifa.png" alt="e-rifas" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Usuários</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-receipt"></i> Promoção</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-arrow-down"></i> Prêmio</a>
+                </li>
+            </ul>
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair do Sistema</a>
+        </div>
+    </nav>
+
+    <div id="content" class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-12 mt-5">
+                <h4 class="text-center text-primary">
+                    Bem vindo ao sistema de gerenciamento de rifas
+                </h4>
+                <img src="img/rifa.png" alt="e-rifas" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
 </body>
+
 </html>
