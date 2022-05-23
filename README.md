@@ -1,2 +1,1 @@
-# Sistema_Gerenciador_Rifas
-Sistema para gerencias rifas
+# Gerenciador-de-Raffles
