@@ -1,1 +1,1 @@
-# Gerenciador-de-Raffles
+# Gerenciador-de-Rifas
