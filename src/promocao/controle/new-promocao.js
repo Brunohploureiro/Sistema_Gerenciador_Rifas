@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('.modal-body').empty()
 
         $('.modal-title').append('Adicionar nova promocao')
-
+        
         $('.modal-body').load('src/promocao/visao/form-promocao.html')
 
         $('.btn-save').show()
@@ -14,10 +14,13 @@ $(document).ready(function() {
         $('.btn-save').attr('data-operation', 'insert')
 
         $('#modal-promocao').modal('show')
+
+        
     })
 
-    $('.close, #close').click(function(e) {
+    $('.close, #close').click(function(e){
         e.preventDefault()
+
         $('#modal-promocao').modal('hide')
     })
 })

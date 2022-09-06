@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-    $('#table-promocao').on('click', 'button.btn-view', function(e) {
+    $('#table-promocao').on('click', 'button.btn-edit', function(e) {
 
-        e.preventDefault()
+        e.preventDefault();
 
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Visualização de registro')
+        $('.modal-title').append('Visualização de registros')
 
         let ID = `ID=${$(this).attr('id')}`
 
@@ -21,13 +21,14 @@ $(document).ready(function() {
                 if (dado.tipo == "success") {
                     $('.modal-body').load('src/promocao/visao/form-promocao.html', function() {
                         $('#NOME').val(dado.dados.NOME)
-                        $('#NOME').attr('readonly', 'true')
+                        $('#ID').val(dado.dados.ID)
                     })
-                    $('.btn-save').hide()
+                    $('.btn-save').removeAttr('data-operation', 'insert')
+                    $('.btn-save').show()
                     $('#modal-promocao').modal('show')
                 } else {
                     Swal.fire({
-                        title: 'TOP-RIFAS',
+                        title: 'e-rifa',
                         text: dado.mensagem,
                         type: dado.tipo,
                         confirmButtonText: 'OK'
@@ -37,4 +38,5 @@ $(document).ready(function() {
         })
 
     })
+
 })

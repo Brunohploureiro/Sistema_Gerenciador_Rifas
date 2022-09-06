@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     $('.btn-save').click(function(e) {
-        e.preventDefault()
+
+        e.preventDefault();
 
         let dados = $('#form-promocao').serialize()
 
@@ -15,7 +16,7 @@ $(document).ready(function() {
             url: 'src/promocao/modelo/save-promocao.php',
             success: function(dados) {
                 Swal.fire({
-                    title: 'TOP-RIFAS',
+                    title: 'e-rifa',
                     text: dados.mensagem,
                     icon: dados.tipo,
                     confirmButtonText: 'OK'
