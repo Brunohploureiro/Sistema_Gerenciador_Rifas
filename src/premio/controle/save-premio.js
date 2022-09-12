@@ -16,7 +16,7 @@ $(document).ready(function() {
             url: 'src/premio/modelo/save-premio.php',
             success: function(dados) {
                 Swal.fire({
-                    title: 'e-rifa',
+                    title: 'Rifadástico',
                     text: dados.mensagem,
                     icon: dados.tipo,
                     confirmButtonText: 'OK'

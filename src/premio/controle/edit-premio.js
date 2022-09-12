@@ -31,7 +31,7 @@ $(document).ready(function() {
 
                         var TIPO_ID = dado.dados.TIPO_ID
 
-                        //Consultar todos os tipos cadastrados no banco de dados
+                        //Consultar todos os tipos cadastrados no banco de daods
                         $.ajax({
                             dataType: 'json',
                             type: 'POST',
@@ -44,16 +44,17 @@ $(document).ready(function() {
                                     } else {
                                         $('#TIPO_ID').append(`<option value="${result.ID}">${result.NOME}</option>`)
                                     }
+
                                 }
                             }
                         })
                     })
+                    $('.btn-save').removeAttr('data-operation', 'insert')
                     $('.btn-save').show()
-                    $('.btn-save').removeAttr('data-operation')
                     $('#modal-premio').modal('show')
                 } else {
                     Swal.fire({ // Inicialização do SweetAlert
-                        title: 'E-RIFA', // Título da janela SweetAlert
+                        title: 'Rifadástico', // Título da janela SweetAlert
                         text: dado.mensagem, // Mensagem retornada do microserviço
                         type: dado.tipo, // premio de retorno [success, info ou error]
                         confirmButtonText: 'OK'

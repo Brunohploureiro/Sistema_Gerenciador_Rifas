@@ -18,11 +18,7 @@ $(document).ready(function() {
                 "className": 'text-center'
             },
             {
-                "data": 'DESCRICAO',
-                "className": 'text-center'
-            },
-            {
-                "data": 'VALOR',
+                "data": 'CELULAR',
                 "className": 'text-center'
             },
             {
