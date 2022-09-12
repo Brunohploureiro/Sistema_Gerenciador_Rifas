@@ -18,6 +18,14 @@ $(document).ready(function() {
             "className": 'text-center'
         },
         {
+            "data": 'DESCRICAO',
+            "className": 'text-center'
+        },
+        {
+            "data": 'VALOR_RIFA',
+            "className": 'text-center'
+        },
+        {
             "data": 'ID',
             "orderable": false,
             "searchable": false,
